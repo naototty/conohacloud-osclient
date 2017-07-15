@@ -1,0 +1,7 @@
+README.rst
+setup.py
+conohacloud_osclient.egg-info/PKG-INFO
+conohacloud_osclient.egg-info/SOURCES.txt
+conohacloud_osclient.egg-info/dependency_links.txt
+conohacloud_osclient.egg-info/requires.txt
+conohacloud_osclient.egg-info/top_level.txt

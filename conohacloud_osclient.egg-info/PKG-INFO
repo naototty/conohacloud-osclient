@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: conohacloud-osclient
+Version: 0.2
+Summary: Metapackage to install python-openstackclient for Juno release and ConoHa Cloud extensions
+Home-page: https://github.com/naototty/conohacloud-osclient
+Author: naototty
+Author-email: naoto-gohko@plastic-machine.red
+License: Apache License, Version 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
