@@ -16,6 +16,10 @@ import setuptools
 
 
 conohacloud_osclient_extensions = [
+    'pbr==1.9.1;python_version=="2.7"',           ## juno cli python lib
+    'prettytable==0.7.2;python_version=="2.7"',   ## juno cli python lib
+    'cliff==2.0.0;python_version=="2.7"',         ## juno cli python lib
+    'PyYAML==3.11;python_version=="2.7"',         ## juno cli python lib
     'keystoneauth1==2.6.0;python_version=="2.7"',   ## keystone auth1 libs
     'openstacksdk==0.8.5;python_version=="2.7"',      ## openstack sdk libs
     'oslo.config==3.9.0;python_version=="2.7"',           ## oslo config libs
@@ -29,12 +33,13 @@ conohacloud_osclient_extensions = [
     'python-novaclient==3.4.0;python_version=="2.7"',       ## Juno nova client
     'python-swiftclient==3.0.0;python_version=="2.7"',      ## Juno Swift client
     'python-openstackclient==2.3.0;python_version=="2.7"',  ## Juno openstack client
+    'python-ironicclient=1.3.1;python_version=="2.7"',      ## Mitaka Ironic client
 ]
 
 
 setuptools.setup(
     name='conohacloud-osclient',
-    version='0.2',
+    version='0.2.1',
     author='naototty',
     author_email='naoto-gohko@plastic-machine.red',
     description='Metapackage to install python-openstackclient for Juno release and ConoHa Cloud '

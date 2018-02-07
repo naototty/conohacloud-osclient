@@ -29,3 +29,8 @@ install_requires
 ... etc. (Juno release OpenStack Client)
 
 
+Changed
+=====
+
+additional install
+  - python-ironicclient==1.3.1 (mitaka)
