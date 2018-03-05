@@ -11,15 +11,15 @@ Install (pip)
 
 ::
 ```
-  pip install git+https://github.com/naototty/conohacloud-osclient.git
+pip install git+https://github.com/naototty/conohacloud-osclient.git
 ```
 
 or 
 
 ```
-  git clone https://github.com/naototty/conohacloud-osclient.git
-  cd conohacloud-osclient/
-  pip install -r pip-freeze-centos7-py27.txt
+$ git clone https://github.com/naototty/conohacloud-osclient.git
+$ cd conohacloud-osclient/
+$ pip install -r pip-freeze-centos7-py27.txt
 ```
 
 Better Install (virtualenv-wrapper)
