@@ -30,6 +30,7 @@ Better Install with virtualenv-wrapper
 CentOS7
 
 1) install virtualenv, virtualenvwrapper
+
 .. code-block:: bash
 
   $ sudo yum yum install python-virtualenvwrapper.noarch python3-virtualenv-doc.noarch python-virtualenv.noarch
