@@ -9,7 +9,6 @@ Metapackage to install python-openstackclient for Juno release and ConoHa Cloud 
 pip Install
 =======
 
-::
 ```
 pip install git+https://github.com/naototty/conohacloud-osclient.git
 ```
@@ -34,6 +33,7 @@ $ sudo yum yum install python-virtualenvwrapper.noarch python3-virtualenv-doc.no
 ```
 
 2) create and load setup rc_file (for bash)
+
 ```
 $ cat > rc_bash_venv_wrapper_setup.sh << __EOF
 #!/bin/bash
@@ -58,6 +58,7 @@ if [ -f /usr/bin/virtualenvwrapper.sh ]; then
   source /usr/bin/virtualenvwrapper.sh
 fi
 ```
+
 load env.
 
 ```
