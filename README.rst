@@ -6,7 +6,7 @@ conohacloud-osclient
 Metapackage to install python-openstackclient for Juno release and ConoHa Cloud extensions
 
 
-Install (pip)
+pip Install
 =======
 
 ::
@@ -22,7 +22,7 @@ $ cd conohacloud-osclient/
 $ pip install -r pip-freeze-centos7-py27.txt
 ```
 
-Better Install (virtualenv-wrapper)
+Better Install with virtualenv-wrapper
 =======
 
 
