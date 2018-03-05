@@ -6,12 +6,75 @@ conohacloud-osclient
 Metapackage to install python-openstackclient for Juno release and ConoHa Cloud extensions
 
 
-Install
+Install (pip)
 =======
 
 ::
-
+```
   pip install git+https://github.com/naototty/conohacloud-osclient.git
+```
+
+or 
+
+```
+  git clone https://github.com/naototty/conohacloud-osclient.git
+  cd conohacloud-osclient/
+  pip install -r pip-freeze-centos7-py27.txt
+```
+
+Better Install (virtualenv-wrapper)
+=======
+
+
+CentOS7
+
+1) install virtualenv, virtualenvwrapper
+```
+$ sudo yum yum install python-virtualenvwrapper.noarch python3-virtualenv-doc.noarch python-virtualenv.noarch
+```
+
+2) create and load setup rc_file (for bash)
+```
+$ cat > rc_bash_venv_wrapper_setup.sh << __EOF
+#!/bin/bash
+
+if [ -f /usr/bin/virtualenvwrapper.sh ]; then
+  ## export WORKON_HOME=$HOME/.virtualenvs
+  export WORKON_HOME=$HOME/devel/API-test-env/.openstack/.virtualenvs
+  export PROJECT_HOME=$HOME/devel/API-test-env
+
+  source /usr/bin/virtualenvwrapper.sh
+fi
+__EOF
+
+(openstack)[n-gohko@appdev02 API-test-env(ent-main-test-ze#2)]$ cat rc_bash_venv_wrapper_setup.sh
+#!/bin/bash
+
+if [ -f /usr/bin/virtualenvwrapper.sh ]; then
+  ## export WORKON_HOME=$HOME/.virtualenvs
+  export WORKON_HOME=$HOME/devel/API-test-env/.openstack/.virtualenvs
+  export PROJECT_HOME=$HOME/devel/API-test-env
+
+  source /usr/bin/virtualenvwrapper.sh
+fi
+```
+load env.
+
+```
+source rc_bash_venv_wrapper_setup.sh
+```
+
+3) mkvirtualenv openstack
+```
+$ mkvirtualenv openstack
+```
+
+4) git clone and osc install by virtualenv
+```
+$  git clone https://github.com/naototty/conohacloud-osclient.git
+$  cd conohacloud-osclient/
+$  pip install -r pip-freeze-centos7-py27.txt
+```
 
 
 Usage
