@@ -17,6 +17,7 @@ import setuptools
 
 conohacloud_osclient_extensions = [
     'pbr==1.9.1;python_version=="2.7"',           ## juno cli python lib
+    'pytz==2018.3;python_version=="2.7"',         ## juno cli python lib
     'prettytable==0.7.2;python_version=="2.7"',   ## juno cli python lib
     'cliff==2.0.0;python_version=="2.7"',         ## juno cli python lib
     'PyYAML==3.11;python_version=="2.7"',         ## juno cli python lib
