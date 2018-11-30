@@ -4,6 +4,9 @@
 pkg_list='
 gcc
 make
+virtpython-virtualenv.noarch
+python-virtualenv-clone.noarch
+python-virtualenvwrapper.noarch
 '
 
 for apkg in $(echo $pkg_list);
@@ -17,6 +20,7 @@ do
      printf "rpm pkg: $apkg is not installed\n" 
      printf "  Please install\n"
      printf "    yum install $apkg\n"
+     yum install -y $apkg\n
    fi
 done
 
