@@ -16,38 +16,39 @@ import setuptools
 
 
 conohacloud_osclient_extensions = [
-    'pbr==1.9.1;python_version=="2.7"',           ## juno cli python lib
-    'pytz==2018.3;python_version=="2.7"',         ## juno cli python lib
-    'prettytable==0.7.2;python_version=="2.7"',   ## juno cli python lib
-    'cliff==2.0.0;python_version=="2.7"',         ## juno cli python lib
-    'PyYAML==3.11;python_version=="2.7"',         ## juno cli python lib
-    'keystoneauth1==2.6.0;python_version=="2.7"',   ## keystone auth1 libs
-    'openstacksdk==0.8.5;python_version=="2.7"',      ## openstack sdk libs
-    'oslo.config==3.9.0;python_version=="2.7"',           ## oslo config libs
-    'oslo.i18n==3.5.0;python_version=="2.7"',             ## oslo i18n libs
-    'oslo.serialization==2.4.0;python_version=="2.7"',    ## oslo serialization libs
-    'oslo.utils==3.8.0;python_version=="2.7"',            ## oslo utils libs
-    'python-cinderclient==1.6.0;python_version=="2.7"',     ## Juno cinder client
-    'python-designateclient==2.1.0;python_version=="2.7"',  ## Juno designate client
-    'python-glanceclient==2.0.0;python_version=="2.7"',     ## Juno glance client
+    'pbr==1.9.1;python_version>="2.7"',           ## juno cli python lib
+    'pytz==2018.3;python_version>="2.7"',         ## juno cli python lib
+    'prettytable==0.7.2;python_version>="2.7"',   ## juno cli python lib
+    'cliff==2.0.0;python_version>="2.7"',         ## juno cli python lib
+    'PyYAML==3.11;python_version>="2.7"',         ## juno cli python lib
+    'keystoneauth1==2.6.0;python_version>="2.7"',   ## keystone auth1 libs
+    'openstacksdk==0.8.5;python_version>="2.7"',      ## openstack sdk libs
+    'oslo.config==3.9.0;python_version>="2.7"',           ## oslo config libs
+    'oslo.i18n==3.5.0;python_version>="2.7"',             ## oslo i18n libs
+    'oslo.serialization==2.4.0;python_version>="2.7"',    ## oslo serialization libs
+    'oslo.utils==3.8.0;python_version>="2.7"',            ## oslo utils libs
+    'python-cinderclient==1.6.0;python_version>="2.7"',     ## Juno cinder client
+    'python-designateclient==2.1.0;python_version>="2.7"',  ## Juno designate client
+    'python-glanceclient==2.0.0;python_version>="2.7"',     ## Juno glance client
     'python-keystoneclient==2.3.1;python_version=="2.7"',   ## Juno keystone client (v2 auth)
-    'python-novaclient==3.4.0;python_version=="2.7"',       ## Juno nova client
-    'python-swiftclient==3.0.0;python_version=="2.7"',      ## Juno Swift client
-    'python-openstackclient==2.3.0;python_version=="2.7"',  ## Juno openstack client
-    'python-ironicclient=1.3.1;python_version=="2.7"',      ## Mitaka Ironic client
+    'python-novaclient==3.4.0;python_version>="2.7"',       ## Juno nova client
+    'python-neutronclient==3.1.0;python_version>="2.7"',    ## Juno neutron client
+    'python-swiftclient==3.0.0;python_version>="2.7"',      ## Juno Swift client
+    'python-openstackclient==2.3.0;python_version>="2.7"',  ## Juno openstack client
+    'python-ironicclient=1.3.1;python_version>="2.7"',      ## Mitaka Ironic client
 ]
 
 
 setuptools.setup(
     name='conohacloud-osclient',
-    version='0.2.1',
+    version='0.2.2',
     author='naototty',
-    author_email='naoto-gohko@plastic-machine.red',
+    author_email='naoto.gohko@coha.tw',
     description='Metapackage to install python-openstackclient for Juno release and ConoHa Cloud '
                 'extensions',
     license='Apache License, Version 2.0',
     url='https://github.com/naototty/conohacloud-osclient',
-    install_requires=['os-client-config==1.17;python_version=="2.7"'] + conohacloud_osclient_extensions,
+    install_requires=['os-client-config==1.17;python_version>="2.7"'] + conohacloud_osclient_extensions,
     
     classifiers=[
         "Development Status :: 5 - Production/Stable",
@@ -58,3 +59,4 @@ setuptools.setup(
         "Programming Language :: Python",
     ]
 )
+
