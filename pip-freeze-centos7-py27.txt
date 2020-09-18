@@ -31,11 +31,11 @@ prettytable==0.7.2
 py==1.4.31
 pyparsing==2.1.1
 python-cinderclient==1.6.0
-python-designateclient==2.1.0
 python-glanceclient==2.0.0
 python-ironicclient==1.4.0
 python-keystoneclient==2.3.1
 python-novaclient==7.1.2
+python-neutronclient==3.1.0
 python-openstackclient==2.3.0
 python-swiftclient==3.0.0
 pytz==2018.3
